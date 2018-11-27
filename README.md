@@ -1,1 +1,1 @@
-# ai-iot-practice
+# ai-iotSeminar
