@@ -6,6 +6,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import requests
 
+# thingspeakに送る処理
 def sendToThingSpeak(t,h):
     url = "https://api.thingspeak.com/update"
     params = {
@@ -14,7 +15,6 @@ def sendToThingSpeak(t,h):
         "field1":h
     }
     requests.get(url,params=params)
-
 
 RANGE_XTIME = 60
 
@@ -54,6 +54,7 @@ while True:
     print("send:{}".format(data))
     # ---取得したデータをターミナルに表示---
 
+    # thingspeakに送信
     sendToThingSpeak(t,h)
 
     # 温度データをグラフ描画のために保管
