@@ -1,7 +1,12 @@
 # ai-iotSeminar
+
+## Overview
+This is the source code used at the ICT/AI seminar
+
+## File Description
 * led.py
-  * 演習Aプログラム
+  * workA program
 * temp.py
-  * 演習Bプログラム
+  * workB program
 * temp_thingspeak.py
-  * 発展課題サンプル
+  * It's a sample of advanced task of workC
