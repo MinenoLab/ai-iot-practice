@@ -13,4 +13,4 @@ This is the source code used at the ICT/AI seminar
 
 ## Raspberry Pi Image file
 * If you need the image file of raspberry pi, please downloads the image file following link.
-* [RasPi image](https://www.minelab.jp/public_data/raspi_img.zip)
+  * [RasPi image](https://www.minelab.jp/public_data/raspi_img.zip)
