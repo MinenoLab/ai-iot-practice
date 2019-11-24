@@ -7,13 +7,13 @@ This is the source code used at the ICT/AI seminar
 * sample
     * Programs in appendix
     sample/ <br> 
-    ├── arithmetic.py <br>
-    ├── comment.py <br>
-    ├── for.py <br>
-    ├── function.py <br>
-    ├── if.py <br>
-    ├── variable.py <br>
-    └── while.py <br>
+        ├── arithmetic.py <br>
+        ├── comment.py <br>
+        ├── for.py <br>
+        ├── function.py <br>
+        ├── if.py <br>
+        ├── variable.py <br>
+        └── while.py <br>
 
 0 directories, 7 files
 
