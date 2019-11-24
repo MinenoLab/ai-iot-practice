@@ -47,10 +47,10 @@ while True:
     h,t = dht.read_retry(dht.DHT11,4) 
     # LED出力 
     if t >= 29: 
-               GPIO.output(LED, GPIO.HIGH) 
-               time.sleep(1) 
+        GPIO.output(LED, GPIO.HIGH) 
+        time.sleep(1) 
     else: 
-               GPIO.output(LED, GPIO.LOW)    
+        GPIO.output(LED, GPIO.LOW)    
 
     # ---取得したデータをターミナルに表示--- 
     data = {  
@@ -61,44 +61,44 @@ while True:
     # ---取得したデータをターミナルに表示--- 
 
     # 温度データをグラフ描画のために保管 
-   if abs(t - tempList[-1]) < 20: 
-                tempList = np.append(tempList,float(round(t,2))) 
-   else: 
-                tempList = np.append(tempList,float(round(tempList[-1],2))) 
+    if abs(t - tempList[-1]) < 20: 
+        tempList = np.append(tempList,float(round(t,2))) 
+    else: 
+        tempList = np.append(tempList,float(round(tempList[-1],2))) 
 
-   # 一番古い温度データを削除 
-   tempList = np.delete(tempList,0) 
+    # 一番古い温度データを削除 
+    tempList = np.delete(tempList,0) 
 
-   # 湿度データをグラフ描画のために保管 
-   if abs(h - humdList[-1]) < 20: 
-       humdList = np.append(humdList,float(round(h,2))) 
-   else: 
-       humdList = np.append(humdList,float(round(humdList[-1],2))) 
+    # 湿度データをグラフ描画のために保管 
+    if abs(h - humdList[-1]) < 20: 
+        humdList = np.append(humdList,float(round(h,2))) 
+    else: 
+        humdList = np.append(humdList,float(round(humdList[-1],2))) 
 
-   # 一番古い湿度データを削除 
-   humdList = np.delete(humdList,0) 
+    # 一番古い湿度データを削除 
+    humdList = np.delete(humdList,0) 
 
-   # 取得時刻を保管 
-   loopList = np.append(loopList,float(loopCount)) 
+    # 取得時刻を保管 
+    loopList = np.append(loopList,float(loopCount)) 
 
-   # 削除した古い温湿度データの取得時刻を削除 
-   loopList = np.delete(loopList,0) 
+    # 削除した古い温湿度データの取得時刻を削除 
+    loopList = np.delete(loopList,0) 
 
-   # ---グラフに描画するための準備--- 
-   lax1.set_data(loopList, tempList) 
-   lax2.set_data(loopList, humdList) 
-   plt.xlim(min(loopList),max(loopList)) 
-   ax1.set_ylim(min(tempList)-0.1,max(tempList)+0.1)  
-   ax2.set_ylim(min(humdList)-0.1,max(humdList)+0.1) 
+    # ---グラフに描画するための準備--- 
+    lax1.set_data(loopList, tempList) 
+    lax2.set_data(loopList, humdList) 
+    plt.xlim(min(loopList),max(loopList)) 
+    ax1.set_ylim(min(tempList)-0.1,max(tempList)+0.1)  
+    ax2.set_ylim(min(humdList)-0.1,max(humdList)+0.1) 
 
-   h1,l1 = ax1.get_legend_handles_labels() 
-   h2,l2 = ax2.get_legend_handles_labels() 
-   ax1.legend(h1+h2,l1+l2,loc='best') 
-   # ---グラフに描画するための準備--- 
+    h1,l1 = ax1.get_legend_handles_labels() 
+    h2,l2 = ax2.get_legend_handles_labels() 
+    ax1.legend(h1+h2,l1+l2,loc='best') 
+    # ---グラフに描画するための準備--- 
 
  
-   # グラフに描画 
-   plt.pause(0.1) 
-   loopCount += 1 
+    # グラフに描画 
+    plt.pause(0.1) 
+    loopCount += 1 
 # 終了処理 
 GPIO.cleanup()
