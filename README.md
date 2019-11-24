@@ -6,14 +6,14 @@ This is the source code used at the ICT/AI seminar
 ## File Description
 * sample
     * Programs in appendix
-    sample/
-    ├── arithmetic.py
-    ├── comment.py
-    ├── for.py
-    ├── function.py
-    ├── if.py
-    ├── variable.py
-    └── while.py
+    sample/ <br> 
+    ├── arithmetic.py <br>
+    ├── comment.py <br>
+    ├── for.py <br>
+    ├── function.py <br>
+    ├── if.py <br>
+    ├── variable.py <br>
+    └── while.py <br>
 
 0 directories, 7 files
 
