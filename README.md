@@ -6,6 +6,16 @@ This is the source code used at the ICT/AI seminar
 ## File Description
 * sample
     * Programs in appendix
+    sample/
+    ├── arithmetic.py
+    ├── comment.py
+    ├── for.py
+    ├── function.py
+    ├── if.py
+    ├── variable.py
+    └── while.py
+
+0 directories, 7 files
 
 * led.py
     * workA program
