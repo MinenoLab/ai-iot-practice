@@ -3,7 +3,8 @@
 
 import RPi.GPIO as GPIO 
 import Adafruit_DHT as dht 
-import time import math 
+import time 
+import math 
 import numpy as np from matplotlib 
 import pyplot as plt 
 
