@@ -9,6 +9,7 @@ buzz_led = 12
 
 # GPIO出力の設定 
 GPIO.setup(buzz_led, GPIO.OUT) 
+GPIO.setup(fizz_led, GPIO.OUT) 
 
 for count in range(1, 30): 
     if count % 15 == 0: 
