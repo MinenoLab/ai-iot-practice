@@ -5,8 +5,8 @@ import RPi.GPIO as GPIO
 import Adafruit_DHT as dht 
 import time 
 import math 
-import numpy as np from matplotlib 
-import pyplot as plt 
+import numpy as np 
+from matplotlib import pyplot as plt 
 
 RANGE_XTIME = 60 
 
@@ -61,9 +61,9 @@ while True:
     # ---取得したデータをターミナルに表示--- 
 
     # 温度データをグラフ描画のために保管 
-    if abs(t - tempList[-1]) < 20: 
+   if abs(t - tempList[-1]) < 20: 
                 tempList = np.append(tempList,float(round(t,2))) 
-    else: 
+   else: 
                 tempList = np.append(tempList,float(round(tempList[-1],2))) 
 
    # 一番古い温度データを削除 
