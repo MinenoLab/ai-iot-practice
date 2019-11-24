@@ -12,7 +12,7 @@ This is the source code used at the ICT/AI seminar
   * It's a sample of advanced task of workC
 
 ## Raspberry Pi Image file
-* If you need the image file of raspberry pi, please downloads the image file following link.
+* Download the image file of Raspberry Pi from the link below.
   * SD card capacity is required 32 GB
   * [RasPi image](https://www.minelab.jp/public_data/raspi_img.zip)
   * [Installation guide](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
